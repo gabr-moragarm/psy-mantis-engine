@@ -1,0 +1,21 @@
+services:
+  app:
+    build:
+      context: .
+    env_file: .env
+    container_name: engine
+    ports:
+      - "${HOST_PORT}:${CONTAINER_PORT}"
+    volumes:
+      - .:/app
+    command: ./entrypoint.sh
+
+  test:
+    build: .
+    volumes:
+      - .:/app
+    env_file: .env
+    environment:
+      - RACK_ENV=test
+      - COVERAGE=true
+    command: bundle exec rspec -fd
