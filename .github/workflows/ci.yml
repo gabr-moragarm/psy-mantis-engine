@@ -10,6 +10,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      RACK_ENV: test
+      LOG_LEVEL: INFO
+      COVERAGE: false
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -18,7 +23,12 @@ jobs:
         uses: docker/setup-buildx-action@v2
 
       - name: Build the image
-        run: docker compose build test
+        run: docker build -t psy-mantis-engine .
 
       - name: Run tests
-        run: docker compose run --rm test
+        run: |
+          docker run --rm \
+            -e RACK_ENV=$RACK_ENV \
+            -e LOG_LEVEL=$LOG_LEVEL \
+            -e COVERAGE=$COVERAGE \
+            psy-mantis-engine bundle exec rspec --format documentation
