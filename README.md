@@ -25,7 +25,7 @@
 
 ---
 
-## 🛠️ Stack tecnico
+## 🛠️ Tech Stack
 
 - [Ruby](https://www.ruby-lang.org/) (versione 3.3)
 - [Sinatra](https://sinatrarb.com/)
