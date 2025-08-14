@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'logger'
+require_relative 'env'
 
 module PsyMantis
   # PsyMantis::Logger is a wrapper around Ruby's standard Logger,
@@ -32,28 +33,12 @@ module PsyMantis
 
     # Builds a configured logger based on environment variables.
     #
-    # @param env [Hash] the environment hash (defaults to ENV)
     # @return [PsyMantis::Logger] an instance with level configured from LOG_LEVEL
-    def self.initialize_from_env(env = ENV)
-      @logger = Logger.new($stdout)
-      @logger.level = log_level_from_env(env)
+    def self.initialize_from_env
+      @logger = ::Logger.new($stdout)
+      @logger.level = PsyMantis::Env.log_level
 
       @logger
-    end
-
-    # Resolves the log level from environment variables.
-    #
-    # @param env [Hash] the environment hash
-    # @return [Integer] a constant from Logger (e.g., Logger::INFO)
-    def self.log_level_from_env(env)
-      log_level = env.fetch('LOG_LEVEL', 'INFO').upcase
-
-      begin
-        Object.const_get("::Logger::#{log_level}")
-      rescue NameError
-        puts "Invalid LOG_LEVEL '#{log_level}', defaulting to INFO" if ENV['RACK_ENV']&.upcase != 'TEST'
-        ::Logger::INFO
-      end
     end
 
     # Checks whether the underlying logger responds to a method.

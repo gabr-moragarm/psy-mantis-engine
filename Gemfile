@@ -10,6 +10,7 @@ gem 'rackup'
 gem 'sinatra'
 
 group :test do
+  gem 'climate_control'
   gem 'rspec'
   gem 'simplecov', require: false
   gem 'webmock'
