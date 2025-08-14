@@ -2,6 +2,9 @@
 
 require 'sinatra'
 require_relative 'lib/psy_mantis/logger'
+require_relative 'lib/psy_mantis/env'
+
+PsyMantis::Env.check_required_env!
 
 configure do
   set :logger, PsyMantis::Logger.initialize_from_env
