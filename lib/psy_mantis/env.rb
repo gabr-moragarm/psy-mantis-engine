@@ -15,7 +15,7 @@ module PsyMantis
   #
   # Environment Variables:
   # - RACK_ENV (required, must be one of: "development", "test", "production")
-  # - STEAM_API_KEY(required)
+  # - STEAM_API_KEY(required in non test environments)
   # - LOG_LEVEL (optional, must be one of: "DEBUG", "INFO", "WARN", "ERROR", "FATAL")
   # - HOST (optional, default: "0.0.0.0")
   # - CONTAINER_PORT (optional, default: "4567")
@@ -24,7 +24,7 @@ module PsyMantis
   #
   # Example:
   #   PsyMantis::Env.check_required_env!  # Abort if RACK_ENV is missing/invalid
-  #   PsyMantis::Env.log_level             # => ::Logger::INFO
+  #   PsyMantis::Env.log_level            # => ::Logger::INFO
   #
   class Env
     # List of valid environments for the application.
@@ -51,7 +51,7 @@ module PsyMantis
     def self.check_required_env!
       missing_vars = []
       missing_vars << 'RACK_ENV' unless valid_rack_env?
-      missing_vars << 'STEAM_API_KEY' if steam_api_key.nil?
+      missing_vars << 'STEAM_API_KEY' if rack_env != 'test' && steam_api_key.nil?
       return if missing_vars.empty?
 
       Kernel.abort("Aborting for missing or invalid required environment variables: #{missing_vars.join(', ')}")
