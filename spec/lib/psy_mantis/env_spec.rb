@@ -13,6 +13,7 @@ RSpec.describe PsyMantis::Env do
     context 'when RACK_ENV is missing' do
       before do
         allow(ENV).to receive(:[]).with('RACK_ENV').and_return(nil)
+        allow(ENV).to receive(:[]).with('STEAM_API_KEY').and_return('valid_api_key')
         allow(Kernel).to receive(:warn)
       end
 
@@ -22,15 +23,33 @@ RSpec.describe PsyMantis::Env do
     end
 
     context 'when RACK_ENV is invalid' do
-      before { allow(ENV).to receive(:[]).with('RACK_ENV').and_return('invalid') }
+      before do
+        allow(ENV).to receive(:[]).with('RACK_ENV').and_return('invalid')
+        allow(ENV).to receive(:[]).with('STEAM_API_KEY').and_return('valid_api_key')
+      end
 
       it 'aborts the application' do
         expect { described_class.check_required_env! }.to raise_error(SystemExit)
       end
     end
 
-    context 'when RACK_ENV is valid' do
-      before { allow(ENV).to receive(:[]).with('RACK_ENV').and_return('development') }
+    context 'when STEAM_API_KEY is missing' do
+      before do
+        allow(ENV).to receive(:[]).with('RACK_ENV').and_return('development')
+        allow(ENV).to receive(:[]).with('STEAM_API_KEY').and_return(nil)
+        allow(Kernel).to receive(:warn)
+      end
+
+      it 'aborts the application' do
+        expect { described_class.check_required_env! }.to raise_error(SystemExit)
+      end
+    end
+
+    context 'when all environment variables are valid' do
+      before do
+        allow(ENV).to receive(:[]).with('RACK_ENV').and_return('development')
+        allow(ENV).to receive(:[]).with('STEAM_API_KEY').and_return('valid_api_key')
+      end
 
       it 'does not abort the application' do
         expect { described_class.check_required_env! }.not_to raise_error
@@ -89,6 +108,32 @@ RSpec.describe PsyMantis::Env do
       it 'warns about the missing RACK_ENV' do
         described_class.rack_env
         expect(Kernel).to have_received(:warn).with(/RACK_ENV is not set!/)
+      end
+    end
+  end
+
+  describe '.steam_api_key' do
+    context 'when STEAM_API_KEY is set' do
+      before { allow(ENV).to receive(:[]).with('STEAM_API_KEY').and_return('valid_api_key') }
+
+      it 'returns the RACK_ENV value' do
+        expect(described_class.steam_api_key).to eq('valid_api_key')
+      end
+    end
+
+    context 'when STEAM_API_KEY is not set' do
+      before do
+        allow(ENV).to receive(:[]).with('STEAM_API_KEY').and_return(nil)
+        allow(Kernel).to receive(:warn)
+      end
+
+      it 'returns nil' do
+        expect(described_class.steam_api_key).to be_nil
+      end
+
+      it 'warns about the missing STEAM_API_KEY' do
+        described_class.steam_api_key
+        expect(Kernel).to have_received(:warn).with(/STEAM_API_KEY is not set!/)
       end
     end
   end
@@ -353,10 +398,6 @@ RSpec.describe PsyMantis::Env do
 
       it 'raises an ArgumentError if threshold is an invalid value' do
         expect { described_class.logs?(:invalid) }.to raise_error(ArgumentError, /Unknown log level/)
-      end
-
-      it 'raises an ArgumentError if threshold is an invalid Integer' do
-        expect { described_class.logs?(5) }.to raise_error(ArgumentError, /Unknown log level/)
       end
     end
   end

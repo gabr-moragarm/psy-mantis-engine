@@ -15,6 +15,7 @@ module PsyMantis
   #
   # Environment Variables:
   # - RACK_ENV (required, must be one of: "development", "test", "production")
+  # - STEAM_API_KEY(required)
   # - LOG_LEVEL (optional, must be one of: "DEBUG", "INFO", "WARN", "ERROR", "FATAL")
   # - HOST (optional, default: "0.0.0.0")
   # - CONTAINER_PORT (optional, default: "4567")
@@ -50,9 +51,10 @@ module PsyMantis
     def self.check_required_env!
       missing_vars = []
       missing_vars << 'RACK_ENV' unless valid_rack_env?
+      missing_vars << 'STEAM_API_KEY' if steam_api_key.nil?
       return if missing_vars.empty?
 
-      Kernel.abort "Missing or invalid required environment variables: #{missing_vars.join(', ')}"
+      Kernel.abort("Aborting for missing or invalid required environment variables: #{missing_vars.join(', ')}")
     end
 
     # Checks whether the current RACK_ENV is valid.
@@ -69,6 +71,15 @@ module PsyMantis
       environment = ENV['RACK_ENV']
       Kernel.warn('RACK_ENV is not set!') if environment.nil?
       environment
+    end
+
+    # Returnd the current STEAM_API_KEY value.
+    #
+    # @return [String, nil] the STEAM_API_KEY value, or nil if not set
+    def self.steam_api_key
+      key = ENV['STEAM_API_KEY'] || nil
+      Kernel.warn('STEAM_API_KEY is not set!') if key.nil?
+      key
     end
 
     # Returns the log level constant based on LOG_LEVEL.
@@ -146,8 +157,6 @@ module PsyMantis
         else
           raise ArgumentError, "Threshold must be Integer, String or Symbol (given: #{threshold.class})"
         end
-
-      raise(ArgumentError, "Unknown log level: #{threshold.inspect}") unless target <= ::Logger::FATAL
 
       log_level <= target
     end
