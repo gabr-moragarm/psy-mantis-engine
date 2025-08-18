@@ -7,11 +7,11 @@ require_relative 'lib/psy_mantis/env'
 PsyMantis::Env.check_required_env!
 
 configure do
+  puts "[CONFIG] Started in #{PsyMantis::Env.rack_env} environment"
   set :logger, PsyMantis::Logger.initialize_from_env
 end
 
 configure :test do
-  puts '>>>> [CONFIG] Test environment'
   set :protection, except: :host_authorization
 end
 

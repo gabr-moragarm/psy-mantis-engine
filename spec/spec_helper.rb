@@ -8,7 +8,7 @@ if ENV['COVERAGE']&.downcase == 'true'
     add_filter '/config/'
   end
 
-  puts '>>>> [COVERAGE] SimpleCov started with branch coverage enabled'
+  puts '[COVERAGE] SimpleCov started with branch coverage enabled'
 end
 
 require 'rack/test'
