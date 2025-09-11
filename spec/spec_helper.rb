@@ -14,7 +14,7 @@ end
 require 'rack/test'
 require 'rspec'
 require 'webmock/rspec'
-require_relative '../app'
+require_relative '../lib/psy_mantis/api'
 
 RSpec.configure do |config|
   config.include(
@@ -22,7 +22,7 @@ RSpec.configure do |config|
       include Rack::Test::Methods
 
       def app
-        Sinatra::Application
+        PsyMantis::API
       end
     end,
     type: :internal_api

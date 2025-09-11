@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-require './app'
+require_relative './psymantis/api'
 
-run Sinatra::Application
+run PsyMantis::API
