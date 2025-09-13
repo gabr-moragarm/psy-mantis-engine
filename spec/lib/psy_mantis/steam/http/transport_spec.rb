@@ -4,6 +4,7 @@ require 'spec_helper'
 require 'webmock/rspec'
 require 'json'
 require_relative '../../../../../lib/psy_mantis/steam/http/transport'
+require_relative '../../../../../lib/psy_mantis/steam/http/errors'
 
 RSpec.describe PsyMantis::Steam::HTTP::Transport do
   subject(:transport) { described_class.new(base_url: base_url) }
