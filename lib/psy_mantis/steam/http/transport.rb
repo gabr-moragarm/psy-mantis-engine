@@ -17,6 +17,8 @@ module PsyMantis
           jitter: true
         }.freeze
 
+        JITTER_BOUNDS = [0.8, 1.2].freeze
+
         # Default headers for all requests.
         HEADERS = {
           'User-Agent' => 'psy-mantis-engine/1.0 (+https://github.com/gabr-moragarm/psy-mantis-engine)',
@@ -120,7 +122,7 @@ module PsyMantis
                  PsyMantis::Steam::HTTP::Errors::ServerError => e
             raise e if attempts > @opts[:max_retries]
 
-            sleep_for(retry_delay_for(attempts, e.respond_to?(:retry_after) ? e.retry_after : nil))
+            Kernel.sleep(retry_delay_for(attempts, e.respond_to?(:retry_after) ? e.retry_after : nil))
             retry
           end
         end
@@ -134,16 +136,7 @@ module PsyMantis
           return server_retry_after if server_retry_after
 
           base_delay = @opts[:base_backoff] * (2**(attempts - 1))
-          @opts[:jitter] ? base_delay * rand(0.8..1.2) : base_delay
-        end
-
-        # Sleeps for the specified duration.
-        # Used to be stubbed in the tests.
-        #
-        # @param duration [Float, Integer] The number of seconds to sleep.
-        # @return [void]
-        def sleep_for(duration)
-          sleep(duration)
+          @opts[:jitter] ? base_delay * rand(JITTER_BOUNDS[0]..JITTER_BOUNDS[1]) : base_delay
         end
       end
     end

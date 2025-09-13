@@ -11,6 +11,9 @@ RSpec.describe PsyMantis::Steam::HTTP::Transport do
 
   let(:base_url) { 'http://example.com' }
   let(:path) { '/test' }
+  let(:jittered_backoff_bounds) do
+    PsyMantis::Steam::HTTP::Transport::JITTER_BOUNDS.map { |bound| bound * options[:base_backoff] }
+  end
 
   def stub_get_request
     stub_request(:get, "#{base_url}#{path}")
@@ -75,40 +78,51 @@ RSpec.describe PsyMantis::Steam::HTTP::Transport do
       it 'waits for the specified duration in Retry-After header' do
         stub_get_request.to_return([{ status: 429, headers: { 'Retry-After' => retry_after } }, { status: 200 }])
         transport = described_class.new(base_url: base_url, **options)
-        allow(transport).to receive(:sleep_for)
+        allow(Kernel).to receive(:sleep)
 
         transport.get(path)
 
-        expect(transport).to have_received(:sleep_for).with(retry_after.to_i)
+        expect(Kernel).to have_received(:sleep).with(retry_after.to_i)
       end
 
       it 'uses backoff when response has no Retry-After' do
         stub_get_request.to_return([{ status: 429 }, { status: 200 }])
 
         transport = described_class.new(base_url: base_url, **options)
-        allow(transport).to receive(:sleep_for)
+        allow(Kernel).to receive(:sleep)
 
         transport.get(path)
 
-        expect(transport).to have_received(:sleep_for).with(options[:base_backoff])
+        expect(Kernel).to have_received(:sleep).with(options[:base_backoff])
       end
 
       it 'uses exponential backoff when response has no Retry-After' do
         stub_get_request.to_return([{ status: 429 }, { status: 429 }, { status: 200 }])
 
         transport = described_class.new(base_url: base_url, **options, max_retries: 2)
-        allow(transport).to receive(:sleep_for)
+        allow(Kernel).to receive(:sleep)
 
         transport.get(path)
 
-        expect(transport).to have_received(:sleep_for).with(2 * options[:base_backoff])
+        expect(Kernel).to have_received(:sleep).with(2 * options[:base_backoff])
+      end
+
+      it 'randomize sleep time when jitter is enabled' do
+        stub_get_request.to_return([{ status: 429 }, { status: 200 }])
+
+        transport = described_class.new(base_url: base_url, **options, jitter: true)
+        allow(Kernel).to receive(:sleep)
+
+        transport.get(path)
+
+        expect(Kernel).to have_received(:sleep).with(be_between(*jittered_backoff_bounds).inclusive)
       end
 
       it 'retries for max_retries times' do
         stub = stub_get_request.to_return([{ status: 429 }, { status: 200 }])
 
         transport = described_class.new(base_url: base_url, **options)
-        allow(transport).to receive(:sleep_for)
+        allow(Kernel).to receive(:sleep)
 
         transport.get(path)
 
@@ -119,7 +133,7 @@ RSpec.describe PsyMantis::Steam::HTTP::Transport do
         stub_get_request.to_return(2.times.map { { status: 429, body: '' } })
 
         transport = described_class.new(base_url: base_url, **options)
-        allow(transport).to receive(:sleep_for)
+        allow(Kernel).to receive(:sleep)
 
         expect { transport.get(path) }.to raise_error(PsyMantis::Steam::HTTP::Errors::RateLimited)
       end
@@ -132,29 +146,40 @@ RSpec.describe PsyMantis::Steam::HTTP::Transport do
         stub_get_request.to_return([{ status: 500 }, { status: 200 }])
 
         transport = described_class.new(base_url: base_url, **options)
-        allow(transport).to receive(:sleep_for)
+        allow(Kernel).to receive(:sleep)
 
         transport.get(path)
 
-        expect(transport).to have_received(:sleep_for).with(options[:base_backoff])
+        expect(Kernel).to have_received(:sleep).with(options[:base_backoff])
       end
 
       it 'waits for exponential backoff when multiple 500 are returned' do
         stub_get_request.to_return([{ status: 500 }, { status: 500 }, { status: 200 }])
 
         transport = described_class.new(base_url: base_url, **options, max_retries: 2)
-        allow(transport).to receive(:sleep_for)
+        allow(Kernel).to receive(:sleep)
 
         transport.get(path)
 
-        expect(transport).to have_received(:sleep_for).with(2 * options[:base_backoff])
+        expect(Kernel).to have_received(:sleep).with(2 * options[:base_backoff])
+      end
+
+      it 'randomize sleep time when jitter is enabled' do
+        stub_get_request.to_return([{ status: 500 }, { status: 200 }])
+
+        transport = described_class.new(base_url: base_url, **options, jitter: true)
+        allow(Kernel).to receive(:sleep)
+
+        transport.get(path)
+
+        expect(Kernel).to have_received(:sleep).with(be_between(*jittered_backoff_bounds).inclusive)
       end
 
       it 'retries for max_retries times' do
         stub = stub_get_request.to_return([{ status: 500 }, { status: 200 }])
 
         transport = described_class.new(base_url: base_url, **options)
-        allow(transport).to receive(:sleep_for)
+        allow(Kernel).to receive(:sleep)
 
         transport.get(path)
 
@@ -165,7 +190,7 @@ RSpec.describe PsyMantis::Steam::HTTP::Transport do
         stub_get_request.to_return(2.times.map { { status: 500, body: '' } })
 
         transport = described_class.new(base_url: base_url, **options)
-        allow(transport).to receive(:sleep_for)
+        allow(Kernel).to receive(:sleep)
 
         expect { transport.get(path) }.to raise_error(PsyMantis::Steam::HTTP::Errors::ServerError)
       end
