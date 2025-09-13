@@ -3,7 +3,7 @@
 require 'spec_helper'
 require 'stringio'
 require 'logger'
-require 'psy_mantis/logger'
+require_relative '../../../lib/psy_mantis/logger'
 require 'climate_control'
 
 RSpec.describe PsyMantis::Logger do
@@ -70,6 +70,7 @@ RSpec.describe PsyMantis::Logger do
     it 'defaults to INFO level if LOG_LEVEL is not set' do
       ClimateControl.modify('LOG_LEVEL' => nil) do
         logger = described_class.initialize_from_env
+        allow(Kernel).to receive(:warn)
         expect(logger.level).to eq(::Logger::INFO)
       end
     end
@@ -77,6 +78,7 @@ RSpec.describe PsyMantis::Logger do
     it 'falls back to INFO level if LOG_LEVEL is invalid' do
       ClimateControl.modify('LOG_LEVEL' => 'FOO') do
         logger = described_class.initialize_from_env
+        allow(Kernel).to receive(:warn)
         expect(logger.level).to eq(::Logger::INFO)
       end
     end
