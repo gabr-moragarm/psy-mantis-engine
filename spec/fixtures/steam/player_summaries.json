@@ -1,0 +1,41 @@
+{
+    "response": {
+        "players": [
+            {
+                "steamid": "76561198140640385",
+                "communityvisibilitystate": 3,
+                "profilestate": 1,
+                "personaname": "Garm97",
+                "profileurl": "https://steamcommunity.com/profiles/76561198140640385/",
+                "avatar": "https://avatars.steamstatic.com/17b681c026d3993d99ab130e3140bfde8c7ca305.jpg",
+                "avatarmedium": "https://avatars.steamstatic.com/17b681c026d3993d99ab130e3140bfde8c7ca305_medium.jpg",
+                "avatarfull": "https://avatars.steamstatic.com/17b681c026d3993d99ab130e3140bfde8c7ca305_full.jpg",
+                "avatarhash": "17b681c026d3993d99ab130e3140bfde8c7ca305",
+                "lastlogoff": 1755554173,
+                "personastate": 3,
+                "primaryclanid": "103582791429521408",
+                "timecreated": 1402839176,
+                "personastateflags": 0
+            },
+            {
+                "steamid": "76561197960435530",
+                "communityvisibilitystate": 3,
+                "profilestate": 1,
+                "personaname": "Robin",
+                "profileurl": "https://steamcommunity.com/id/robinwalker/",
+                "avatar": "https://avatars.steamstatic.com/81b5478529dce13bf24b55ac42c1af7058aaf7a9.jpg",
+                "avatarmedium": "https://avatars.steamstatic.com/81b5478529dce13bf24b55ac42c1af7058aaf7a9_medium.jpg",
+                "avatarfull": "https://avatars.steamstatic.com/81b5478529dce13bf24b55ac42c1af7058aaf7a9_full.jpg",
+                "avatarhash": "81b5478529dce13bf24b55ac42c1af7058aaf7a9",
+                "personastate": 4,
+                "realname": "Robin Walker",
+                "primaryclanid": "103582791429521412",
+                "timecreated": 1063407589,
+                "personastateflags": 0,
+                "loccountrycode": "US",
+                "locstatecode": "WA",
+                "loccityid": 3961
+            }
+        ]
+    }
+}

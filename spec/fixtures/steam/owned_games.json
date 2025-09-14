@@ -1,0 +1,1040 @@
+{
+    "response": {
+        "game_count": 103,
+        "games": [
+            {
+                "appid": 4000,
+                "playtime_forever": 92,
+                "playtime_windows_forever": 92,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1590531467,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 6860,
+                "playtime_forever": 35,
+                "playtime_windows_forever": 35,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1711915345,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 400,
+                "playtime_forever": 129,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1519031385,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 47810,
+                "playtime_forever": 4926,
+                "playtime_windows_forever": 4926,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1619370531,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 99810,
+                "playtime_forever": 556,
+                "playtime_windows_forever": 23,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1624105278,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 620,
+                "playtime_forever": 1603,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1523799425,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 8980,
+                "playtime_forever": 188,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1515532223,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 729040,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 48000,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 107100,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 24240,
+                "playtime_forever": 537,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1515533613,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 49520,
+                "playtime_forever": 5258,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1513890046,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 214560,
+                "playtime_forever": 793,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1492504814,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 203140,
+                "playtime_forever": 855,
+                "playtime_windows_forever": 855,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1743285566,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 205930,
+                "playtime_forever": 11,
+                "playtime_windows_forever": 11,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1743286748,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 239030,
+                "playtime_forever": 189,
+                "playtime_windows_forever": 189,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1591719577,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 239350,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 250320,
+                "playtime_forever": 819,
+                "playtime_windows_forever": 819,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1744477866,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 256290,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 237930,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 303210,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 312200,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 250400,
+                "playtime_forever": 119,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1473595925,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 323190,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 282070,
+                "playtime_2weeks": 358,
+                "playtime_forever": 358,
+                "playtime_windows_forever": 358,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1755368879,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 250900,
+                "playtime_2weeks": 525,
+                "playtime_forever": 4651,
+                "playtime_windows_forever": 4651,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1755553982,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 316790,
+                "playtime_forever": 734,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1527614325,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 322330,
+                "playtime_forever": 382,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1497468683,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 291550,
+                "playtime_forever": 107,
+                "playtime_windows_forever": 107,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1590439893,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 391540,
+                "playtime_2weeks": 911,
+                "playtime_forever": 911,
+                "playtime_windows_forever": 911,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1755271943,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 410670,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 210970,
+                "playtime_forever": 115,
+                "playtime_windows_forever": 115,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1751812615,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 457140,
+                "playtime_forever": 667,
+                "playtime_windows_forever": 667,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1687289440,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 462770,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 379720,
+                "playtime_forever": 331,
+                "playtime_windows_forever": 331,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1644161593,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 474750,
+                "playtime_forever": 576,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1531662151,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 489830,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 503560,
+                "playtime_forever": 93,
+                "playtime_windows_forever": 93,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1736170760,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 522470,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 292030,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 581270,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 582500,
+                "playtime_forever": 23,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1518702760,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 601360,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 632470,
+                "playtime_forever": 33,
+                "playtime_windows_forever": 33,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1710085910,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 379430,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 587620,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 801480,
+                "playtime_forever": 254,
+                "playtime_windows_forever": 254,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1687100478,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 846110,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 870780,
+                "playtime_forever": 11,
+                "playtime_windows_forever": 11,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1732975396,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 906100,
+                "playtime_forever": 340,
+                "playtime_windows_forever": 340,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1712001314,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 814380,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 966330,
+                "playtime_forever": 66,
+                "playtime_windows_forever": 66,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1738411893,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 972660,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 973760,
+                "playtime_forever": 737,
+                "playtime_windows_forever": 737,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1714929227,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1003090,
+                "playtime_forever": 186,
+                "playtime_windows_forever": 186,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1719075438,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 893180,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1020470,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1086940,
+                "playtime_forever": 19189,
+                "playtime_windows_forever": 19189,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1736115498,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1091500,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1092790,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1115690,
+                "playtime_forever": 519,
+                "playtime_windows_forever": 519,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1743894841,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1150690,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1174180,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1145360,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1238040,
+                "playtime_forever": 1022,
+                "playtime_windows_forever": 1022,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1598714476,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1245620,
+                "playtime_forever": 27437,
+                "playtime_windows_forever": 27437,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1737905141,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 397540,
+                "playtime_forever": 1059,
+                "playtime_windows_forever": 1059,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1648927576,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1276790,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1283410,
+                "playtime_forever": 825,
+                "playtime_windows_forever": 825,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1714221561,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1333200,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 638230,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1371720,
+                "playtime_forever": 167,
+                "playtime_windows_forever": 167,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1732972744,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1190460,
+                "playtime_forever": 672,
+                "playtime_windows_forever": 672,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1624103700,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1449690,
+                "playtime_forever": 1455,
+                "playtime_windows_forever": 1455,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1754230408,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1139900,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1466640,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1477980,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1484900,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 330830,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1545560,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 242050,
+                "playtime_forever": 100,
+                "playtime_windows_forever": 100,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1732365659,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 424840,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1755580,
+                "playtime_forever": 23,
+                "playtime_windows_forever": 23,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1687643198,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 55150,
+                "playtime_forever": 423,
+                "playtime_windows_forever": 423,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1752412679,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1759380,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1651960,
+                "playtime_forever": 80,
+                "playtime_windows_forever": 80,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1739047828,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1839880,
+                "playtime_forever": 53,
+                "playtime_windows_forever": 53,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1687641716,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1850570,
+                "playtime_forever": 5556,
+                "playtime_windows_forever": 5556,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1707682228,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 2058180,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 2058190,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1313140,
+                "playtime_forever": 1418,
+                "playtime_windows_forever": 1418,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1733678770,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 2144740,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 990080,
+                "playtime_forever": 3062,
+                "playtime_windows_forever": 3062,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1678485530,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1457080,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 2523120,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1778820,
+                "playtime_forever": 486,
+                "playtime_windows_forever": 486,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1714224498,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1681430,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 2679460,
+                "playtime_forever": 5913,
+                "playtime_windows_forever": 5913,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1741032636,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 70,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 1983260,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 815370,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 3224770,
+                "playtime_forever": 64,
+                "playtime_windows_forever": 64,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 1753525965,
+                "playtime_disconnected": 0
+            },
+            {
+                "appid": 3602770,
+                "playtime_forever": 0,
+                "playtime_windows_forever": 0,
+                "playtime_mac_forever": 0,
+                "playtime_linux_forever": 0,
+                "playtime_deck_forever": 0,
+                "rtime_last_played": 0,
+                "playtime_disconnected": 0
+            }
+        ]
+    }
+}
