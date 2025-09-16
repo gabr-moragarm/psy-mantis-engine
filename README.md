@@ -1,7 +1,7 @@
 # Psy-Mantis-Engine
 
-> **⚠️ Work in Progress** – Ruby/Sinatra backend API to analyze a Steam games library and provide Psycho Mantis-style commentary.
-> Currently implements only the base structure with a placeholder /analyze endpoint.
+> **⚠️ Work in Progress** - Ruby/Sinatra backend API to analyze a Steam games library and provide *Psycho Mantis*-style commentary.
+> Currently implements the base structure, custom logging, and a Steam Web API client with basic endpoints.
 
 ![Build Status](https://github.com/gabr-moragarm/psy-mantis-engine/actions/workflows/ci.yml/badge.svg)
 
@@ -11,17 +11,18 @@
 
 - **Completed**
   - Base Sinatra structure
-  - Custom PsyMantis::Logger with LOG_LEVEL configuration
+  - Custom logging with configurable levels
+  - Environment variable management and validation
   - Containerization with Docker and docker-compose for local development
   - Automated testing with RSpec and GitHub Actions CI
+  - Steam API client with retry/backoff and error handling
+  - API key configuration & validation
   - Optional integration with SimpleCov for coverage (local only)
 
 - **In Progress**
-  - Steam Web API integration
   - Implementation of game profile analysis logic
-  - Steam API Key handling
   - Structured JSON output with real analysis
-  - Full project roadmap
+  - Roadmap expansion
 
 ---
 
@@ -29,6 +30,7 @@
 
 - [Ruby](https://www.ruby-lang.org/) (versione 3.3)
 - [Sinatra](https://sinatrarb.com/)
+- [Faraday](https://lostisland.github.io/faraday/) for HTTP transport
 - [RSpec](https://rspec.info/)
 - [Docker](https://www.docker.com/) + [Docker Compose](https://docs.docker.com/compose/)
 - [GitHub Actions](https://docs.github.com/en/actions)
@@ -46,7 +48,7 @@ cp .env.example .env
 docker compose up --build
 ```
 
-The API will be available at http://localhost:`${HOST_PORT}` (default 4567).
+The API will be available at `http://localhost:${HOST_PORT}` (default 4567).
 
 ---
 
@@ -54,7 +56,7 @@ The API will be available at http://localhost:`${HOST_PORT}` (default 4567).
 
 ### GET /analyze
 
-Analyzes a Steam profile based on the provided steam_id.
+Analyzes a Steam profile based on the provided `steam_id`.
 Currently returns only a placeholder message.
 
 Example request:
@@ -75,14 +77,15 @@ Example response:
 
 ## ⚙️ Environment Variables
 
-| Variabile         | Default       | Description |
+| Variable          | Default       | Description |
 |-------------------|--------------|-------------|
 | `LOG_LEVEL`       | `DEBUG`      | Log level (`DEBUG`, `INFO`, `WARN`, `ERROR`, `FATAL`) |
-| `RACK_ENV`        | `development`| Application environment |
+| `RACK_ENV`        | `development`| Application environment (`development`, `test`, `production`) |
 | `HOST`            | `0.0.0.0`    | Application bind host |
 | `CONTAINER_PORT`  | `4567`       | Internal container port |
 | `HOST_PORT`       | `4567`       | Local exposed port |
 | `COVERAGE`        | `false`      | Enables SimpleCov if `true` |
+| `STEAM_API_KEY`   | *(none)*     | Required for Steam Web API requests |
 
 ---
 
@@ -101,10 +104,8 @@ To enable SimpleCov, set `COVERAGE=true` in the `.env` file.
 
 ## 📅 Next Steps
 
-- [ ] Steam Web API integration
 - [ ] Game profile analysis & personalized report generation
-- [ ] Steam API key handling
-- [ ] Test coverage > 90% in CI
+- [ ] Structured JSON output with real analysis
 - [ ] Production container deployment
 
 ---
