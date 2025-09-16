@@ -87,6 +87,13 @@ RSpec.describe PsyMantis::Steam::HTTP::Client do
       client = described_class.new(api_key)
       expect(client.player_summaries(steam_user_id)).to eq([])
     end
+
+    it 'returns empty array when Steam responds without a body' do
+      stub_player_summaries(body: nil.to_json)
+
+      client = described_class.new(api_key)
+      expect(client.player_summaries(steam_user_id)).to eq([])
+    end
   end
 
   describe '#owned_games' do
@@ -147,6 +154,13 @@ RSpec.describe PsyMantis::Steam::HTTP::Client do
 
     it 'returns empty array when Steam responds without game list' do
       stub_owned_games(body: { response: { game_count: 0 } }.to_json)
+
+      client = described_class.new(api_key)
+      expect(client.owned_games(steam_user_id)).to eq([])
+    end
+
+    it 'returns empty array when Steam responds without a body' do
+      stub_owned_games(body: nil.to_json)
 
       client = described_class.new(api_key)
       expect(client.owned_games(steam_user_id)).to eq([])
@@ -221,6 +235,13 @@ RSpec.describe PsyMantis::Steam::HTTP::Client do
 
     it 'returns nil when Steam doesn\'t responds with the game details' do
       stub_app_details(body: { response: {} }.to_json)
+
+      client = described_class.new(api_key)
+      expect(client.app_details(steam_app_id)).to be_nil
+    end
+
+    it 'returns empty array when Steam responds without a body' do
+      stub_app_details(body: nil.to_json)
 
       client = described_class.new(api_key)
       expect(client.app_details(steam_app_id)).to be_nil

@@ -147,7 +147,7 @@ module PsyMantis
         def normalize_genres(details)
           details.fetch('genres', []).map do |genre|
             {
-              id: genre.fetch('id', nil)&.to_s,
+              id: genre.fetch('id', nil).to_s,
               description: genre.fetch('description', '')
             }
           end
@@ -160,7 +160,7 @@ module PsyMantis
         def normalize_screenshots(details)
           details.fetch('screenshots', []).map do |screenshot|
             {
-              id: screenshot.fetch('id', nil)&.to_s,
+              id: screenshot.fetch('id', nil).to_s,
               path_full: screenshot.fetch('path_full', '')
             }
           end
